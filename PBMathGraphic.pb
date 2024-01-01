@@ -70,7 +70,7 @@ EndStructure
 
 ;--====== GRAPH CONFIG ======================
 
-XIncludeFile "PBMathGraphicConfig.pbi"
+XIncludeFile "PBMathGraphic-CongruenceCircle.pbi"
 
 ;-=============================================
 
@@ -170,7 +170,7 @@ AddKeyboardShortcut(1, #PB_Shortcut_Control | #PB_Shortcut_S, 2)
 
 initGraphInputs(@mainGraph, @graphInstances(0))
 
-drawGraphToScreen(@graphInstances(0))
+drawGraph(@graphInstances(0), 300, 300)
 
 quit = #False
 Repeat 
@@ -201,8 +201,9 @@ Repeat
     EndSelect        
 Until quit
 
-; IDE Options = PureBasic 6.00 LTS (Windows - x64)
-; CursorPosition = 12
+; IDE Options = PureBasic 6.04 LTS (Windows - x64)
+; CursorPosition = 72
+; FirstLine = 66
 ; Folding = --
 ; EnableXP
 ; DPIAware
